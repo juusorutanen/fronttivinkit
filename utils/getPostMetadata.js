@@ -12,8 +12,10 @@ export default function getPostMetadata(basePath) {
         const matterResult = matter(fileContents)
         return {
             title: matterResult.data.title,
+            image: matterResult.data.image,
             description: matterResult.data.description,
             date: matterResult.data.date,
+            category: matterResult.data.category,
             slug: filename.replace('.md', '')
         }
     })
