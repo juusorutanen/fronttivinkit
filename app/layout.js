@@ -1,6 +1,5 @@
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
-import "../styles/main.scss"
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
 
@@ -16,7 +15,7 @@ export default function RootLayout({ children }) {
  
   return (
     <html lang="en">
-      <body className="container">
+      <body className="antialiased bg-bg px-6 md:px-56 text-accent box-border">
        <Navbar/>
         {children}
         <Footer/>
