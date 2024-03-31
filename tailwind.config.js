@@ -40,10 +40,6 @@ module.exports = {
       'gradient3': '#675E4C',
     },
     extend: {
-      fontFamily: {
-        overusedgrotesk: ['var(--font-overusedgrotesk)'],
-      },
-      
       letterSpacing: {
         'close': '-3.5%',
         'base': '-1%'
