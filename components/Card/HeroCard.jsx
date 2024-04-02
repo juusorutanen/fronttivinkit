@@ -3,15 +3,13 @@ import Image from "next/image";
 
 export default function HeroCard({ post }) {
   return (
-    <section className="flex flex-col md:flex-row gap-4 mt-20 mb-32 mx-auto">
+    <section className="rounded-xl flex flex-col md:flex-row gap-4 mt-10 mb-6 mx-auto">
       <div className="bg-light-gray p-4 md:w-1/3">
         <h4 className="text-h4 text-display text-center">
           Löydä hyödyllisiä vinkkejä ohjelmointiin ja ohjelmointialalle.
         </h4>
         <p className="text-text mx-auto text-base text-center xl:text-h6 2xl:text-h5 pt-5 ">
-          Yksinkertaisia ja helposti sulateltavia vinkkejä alasta
-          kiinnostuneille. Vinkit keskittyvät pääosin frontti- ja
-          webkehitykseen.
+          Yksinkertaisia ja helposti sulateltavia vinkkejä frontti- ja webkehitykseen.
         </p>
         <span className="text-bg rounded-lg font-semibold bg-gradient-to-br from-gradient to-primary group sm:px-5 sm:py-3 px-3 py-2 flex items-center justify-center flex-shrink-0 transition-all duration-200 text-base xl:text-h6 2xl:text-h5">
           <Link href={`/tip/${post.slug}`} className="text-white">

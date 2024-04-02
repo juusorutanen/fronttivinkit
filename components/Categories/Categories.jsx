@@ -29,7 +29,7 @@ export default function CategoryButtons({ posts }) {
           activeCategory === "" ? "bg-accent text-bg" : "bg-bg text-accent"
         }`}
       >
-        All
+        Kaikki
       </button>
       <div className="bg-dark-gray p-1 flex gap-x-0 bg-dark-charcoal rounded-xl border border-outline border-opacity-15">
         {Object.entries(categoryCount).map(([category, count]) => {
