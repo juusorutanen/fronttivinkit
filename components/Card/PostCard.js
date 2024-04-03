@@ -10,6 +10,7 @@ export default function PostCard({post}) {
                 <div className="max-w-sm rounded overflow-hidden shadow-lg bg-dark-charcoal text-white">
                     <div className="relative">
                         <Image
+                            priority
                             className="w-full"
                             width={200}
                             height={100}

@@ -24,9 +24,9 @@ export default function HeroCard({ post }) {
             <p className="card-desc">{post.description}</p>
           </div>
           <Image
-            layout="responsive"
-            width={2000} // Set a large width to fill the parent container
-            height={1000} // Set a large height to maintain aspect ratio
+            width={2000} 
+            height={1000}
+            priority
             src={post.image}
             alt={post.title}
           />
