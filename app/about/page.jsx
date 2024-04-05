@@ -1,0 +1,3 @@
+<p>
+Olin ensiksi luomassa sivustoa englanniksi, mutta vastaavia sivustoja on liikaakin tarjolla, joten päätin ottaa kieleksi Suomen, sillä suomenkielisiä blogeja/oppaita on varsin vähän, tai niitä on päivitetty viimeksi useita vuosia sitten. Pääasiallinen tarkoitus on syventyä itse uusiin tai vanhempiinkin aiheisiin ja toivoa, että lukijat saisivat samalla hyötyä kirjoittamistani vinkeistä. Sisältö pyörii pääasiassa frontti- ja webbikehityksen ympärillä. 
+</p>
