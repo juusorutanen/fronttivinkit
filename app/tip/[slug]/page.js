@@ -3,6 +3,7 @@ import getPostMetadata from "@/utils/getPostMetadata";
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
+import Code from "@/components/codeblock";
 
 function getPostContent(slug) {
   const folder = "tips/";
@@ -32,7 +33,17 @@ export default function TipsPage(props) {
   return (
     <main>
       <article>
-        <Markdown>{post.content}</Markdown>
+        <Markdown
+          options={{
+            overrides: {
+              code: {
+                component: Code,
+              },
+            },
+          }}
+        >
+          {post.content}
+        </Markdown>
       </article>
     </main>
   );
