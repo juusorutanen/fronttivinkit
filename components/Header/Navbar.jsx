@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (   
     <header className="hidden md:block border-b-2 border-b-dim-gray border-opacity-30">
-      <nav className="flex justify-between py-10 px-3 items-center bg-white">
+      <nav className="flex justify-between py-3 px-3 items-center bg-white">
         <Link aria-label="Back to Home" href={"/"}>
           <h1 className="text-h3">DEVTIPS</h1>
         </Link>
