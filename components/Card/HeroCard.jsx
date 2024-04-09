@@ -23,7 +23,7 @@ export default function HeroCard({ post }) {
             width={2000} 
             height={1000}
             priority
-            src="/heroimg.png"
+            src="/heroimg.svg"
             alt={post.title}
           />
         </div>
