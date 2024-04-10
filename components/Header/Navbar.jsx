@@ -14,7 +14,7 @@ export default function Navbar() {
       </svg>
         <input class="ml-2 outline-none bg-transparent font-" type="text" name="search" id="search" placeholder="Etsi vinkkejä..." />
         </div>
-        <ul className="flex items-center space-x-6">
+        <ul className="flex items-center space-x-6 text-light-gray">
           <li>
           <Link target="_blank" href="/">
             <span className="">Mikä Devtips?</span>

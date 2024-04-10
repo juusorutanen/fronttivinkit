@@ -33,7 +33,7 @@ module.exports = {
       'gray': '#D1D1D1',
       'accent': '#A6E22E',
       'text': '#F7F8F8',
-      'text-link':'#8a8f98',
+      'light-grey':'#8a8f98',
       'primary': '#EFECE6',
       'outline': '#D1D1D1',
       'gradient': '#1F1F1F',

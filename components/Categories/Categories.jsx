@@ -17,6 +17,8 @@ export default function CategoryButtons({ posts }) {
     });
   }
 
+  // todo: add icons next to each category
+
   return (
     // make categories to always stay at the top
     <div className="mb-8 sticky top-6 z-50 justify-center gap-x-2 flex-wrap gap-y-2 hidden sm:flex">

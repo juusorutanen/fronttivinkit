@@ -19,13 +19,13 @@ export default function PostCard({post}) {
                         />
                     </div>
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">{post.title}</div>
-                        <p className="text-gray-300 text-base mb-2">{post.description}</p>
-                        <p className="text-gray-500 text-sm">{formattedDate}</p>
+                        <div className="font-bold text-text text-xl mb-2">{post.title}</div>
+                        <p className="text-light-gray text-base mb-2">{post.description}</p>
+                        <p className="text-light-gray text-base mb-2">{post.category}</p>
                     </div>
                     <div className="px-6 py-4 flex justify-between items-center">
                         <span className="font-bold text-blue-500 hover:text-blue-700">Read more</span>
-                        <div className="px-3 py-1 bg-blue-200 text-blue-800 rounded-full text-sm">{post.category}</div>
+                        <div className="px-3 py-1 bg-blue-200 text-blue-800 rounded-full text-sm"><p className="text-gray-500 text-sm">{formattedDate}</p></div>
                     </div>
                 </div>
         </Link>
