@@ -16,12 +16,12 @@ export default function Navbar() {
         </div>
         <ul className="flex items-center space-x-6 text-light-gray">
           <li>
-          <Link target="_blank" href="/">
+          <Link className="hover:text-accent" target="_blank" href="/">
             <span className="">Mikä Devtips?</span>
           </Link>
          </li>
           <li>
-          <Link target="_blank" href="/">
+          <Link className="hover:text-accent" target="_blank" href="/">
             <span>Etusivu</span>
           </Link>
           </li>
