@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
  
   return (
     <html lang="en">
-      <body className="antialiased bg-bg px-6 md:px-52 text-accent box-border">
+      <body className="antialiased bg-bg px-6 md:px-52 text-white box-border">
        <Navbar/>
         {children}
         <Footer/>
