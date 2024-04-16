@@ -2,6 +2,7 @@ import getPostMetadata from "@/utils/getPostMetadata";
 import PostCard from "@/components/Card/PostCard";
 import HeroCard from "@/components/Card/HeroCard";
 import CategoryButtons from "@/components/Categories/Categories";
+import NewPost from "@/components/NewPost";
 
 export default function Home({ searchParams }) {
   const { category } = searchParams;
@@ -18,9 +19,10 @@ export default function Home({ searchParams }) {
 
   return (
     <main>
-      <HeroCard post={latestPost} />
+      <NewPost post={latestPost}/>
+      <HeroCard/>
       <CategoryButtons posts={allPosts} />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredPosts.map((post, postIndex) => (
           <PostCard key={postIndex} post={post} />
         ))}
