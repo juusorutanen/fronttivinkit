@@ -43,7 +43,7 @@ export default function CategoryButtons({ posts }) {
                 router.push(`/?category=${category}`, { scroll: false });
               }}
               className={`py-1 px-7 flex gap-x-1 font-medium transition-all relative ${
-                activeCategory === category ? "" : "   hover:text-gray"
+                activeCategory === category ? "" : "hover:text-gray"
               }`}
             >
                 {/* use motion div to create a sliding effect */}
@@ -54,7 +54,7 @@ export default function CategoryButtons({ posts }) {
                     ease: [0.16, 1, 0.3, 1],
                   }}
                   layoutId="active"
-                  className=" absolute inset-0 bg-accent rounded-xl"
+                  className="absolute inset-0 bg-accent rounded-xl"
                 />
               )}
               <span className="text-sm xl:text-h6 relative mix-blend-exclusion  z-10">
