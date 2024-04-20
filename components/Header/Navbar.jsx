@@ -5,7 +5,7 @@ export default function Navbar() {
     <header className="hidden md:block border-b-2 border-b-dim-gray border-opacity-30 mt-20">
       <nav className="flex justify-between py-3 px-3 items-center">
         <Link aria-label="Back to Home" href={"/"}>
-          <h1 className="text-h3 text-accent">DEVTIPS</h1>
+          <h1 className="text-h3 text-accent">FRONTTIVINKIT</h1>
         </Link>
         <div class="flex items-center">
         <div className="flex items-center">
@@ -16,12 +16,12 @@ export default function Navbar() {
         </div>
         <ul className="flex items-center space-x-6 text-light-gray">
           <li>
-          <Link className="hover:text-accent" target="_blank" href="/">
-            <span className="">Mikä Devtips?</span>
+          <Link className="hover:text-accent" href="/">
+            <span className="">Mikä Fronttivinkit?</span>
           </Link>
          </li>
           <li>
-          <Link className="hover:text-accent" target="_blank" href="/">
+          <Link className="hover:text-accent" href="/">
             <span>Etusivu</span>
           </Link>
           </li>
