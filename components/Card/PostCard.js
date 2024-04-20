@@ -7,7 +7,7 @@ export default function PostCard({ post }) {
   return (
     <article>
       <Link href={`/tip/${post.slug}`}>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-dark-charcoal text-white">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-dark-charcoal text-white border-2 border-transparent hover:border-light-gray">
           <div className="relative">
             <div className="overflow-hidden bg-clip-border rounded-xl p-4">
               <Image
@@ -28,7 +28,7 @@ export default function PostCard({ post }) {
             <p className="text-light-gray text-base mb-2">{post.description}</p>
           </div>
           <div className="px-6 py-4 flex justify-between items-center">
-            <span className="font-bold text-bg bg-accent-purple p-1 rounded-md">
+            <span className="font-bold text-dark-charcoal bg-accent-purple p-1 rounded-md">
               Read more
             </span>
             <div className="px-3 py-1 rounded-full text-sm">
