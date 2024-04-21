@@ -4,6 +4,7 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Code from "@/components/codeblock";
+import Link from "next/link";
 
 function getPostContent(slug) {
   const folder = "tips/";
@@ -32,6 +33,9 @@ export default function TipsPage(props) {
 
   return (
     <main>
+      <Link className="hover:text-accent" href="/">
+            <span>Takaisin</span>
+          </Link>
       <article>
         <Markdown
           options={{
