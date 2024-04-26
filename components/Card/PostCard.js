@@ -28,8 +28,8 @@ export default function PostCard({ post }) {
             <p className="text-light-gray text-base mb-2">{post.description}</p>
           </div>
           <div className="px-6 py-4 flex justify-between items-center">
-            <span className="font-bold text-dark-charcoal bg-accent-purple p-1 rounded-md">
-              Read more
+            <span className="font-bold text-dark-charcoal bg-accent-purple p-2 rounded-md">
+              Lue lisää
             </span>
             <div className="px-3 py-1 rounded-full text-sm">
               <p className="text-gray-500 text-sm">{formattedDate}</p>
