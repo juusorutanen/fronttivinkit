@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="gap-y-4 b-8 flex flex-col text-base xl:text-h6 2xl:text-h5">
           <div className="flex w-56 gap-x-1 xl:w-96 ">
             <span className="w-fit flex-nowrap whitespace-nowrap">
-              Made with 💛 by {" "}
+              Made with <span style={{ color: 'purple' }}>{"\u{1F49C}"}</span> by {" "}
             </span>
             <Link
               className="font-bold relative overflow-y-hidden w-full group h-fit"
