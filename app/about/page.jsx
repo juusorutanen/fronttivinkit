@@ -3,7 +3,7 @@ export const metadata = {
   alternates: {
     canonical: "/mika-fronttivinkit",
     languages: {
-      "en-US": "/en-US",
+      "fi-FI": "/fi-FI",
     },
   },
   title: "Fronttivinkit — Mikä Fronttivinkit?",
@@ -20,17 +20,16 @@ export default function About() {
     <div className="my-20 flex-col flex lg:grid lg:grid-cols-12">
       <div className="text-display col-span-4">
         <h1 className="mb-8 lg:pl-8">
-          Mikä <span className="text-light-gray">Fronttivinkit</span>
+          Mikä <span className="text-light-gray">Fronttivinkit?</span>
         </h1>
       </div>
       <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4  leading-[130%] text-light-gray font-medium space-y-7">
         <p className="space-y-8 flex flex-col">
-          <p>
             <span>
               Olin ensiksi luomassa sivustoa englanniksi, mutta vastaavia
               sivustoja on liikaakin tarjolla, joten päätin ottaa kieleksi
               Suomen, sillä suomenkielisiä blogeja/oppaita on varsin vähän, tai
-              niitä on päivitetty viimeksi useita vuosia sitten.
+              niitä on päivitetty viimeksi useita vuosia sitten. 
             </span>
             <span>
               Pääasiallinen tarkoitus on syventyä itse uusiin tai vanhempiinkin
@@ -38,7 +37,6 @@ export default function About() {
               kirjoittamistani vinkeistä. Sisältö pyörii pääasiassa frontti- ja
               webbikehityksen ympärillä.
             </span>
-          </p>
         </p>
       </div>
     </div>
