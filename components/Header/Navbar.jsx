@@ -14,7 +14,7 @@ export default function Navbar() {
         <SearchBar postMetadata={allPosts} />
         <ul className="flex items-center space-x-6 text-light-gray">
           <li>
-            <Link className="hover:text-accent" href="/">
+            <Link className="hover:text-accent" href="/about">
               <span className="">Mikä Fronttivinkit?</span>
             </Link>
           </li>
