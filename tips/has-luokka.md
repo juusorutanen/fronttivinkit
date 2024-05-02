@@ -1,14 +1,12 @@
 ---
 title: ":has-pseudoluokka ja sen hyödyt"
 description: |
-  Lorem lipsum lipsum lipsum, Lorem lipsum lipsum lipsum Lorem lipsum lipsum lipsum
+  Has on suosiota kasvattanut CSS:n pseudoluokka, joka on toiminut uusilla selaimilla viime joulukuusta läht..
 date: 2024-04-04T14:23:10.796Z
 image: "/test.jpg"
 category: CSS
 ---
-Lorem lipsum
-
-**Header**.
+# :has-pseudoluokka ja sen hyödyt
 
 Has on suosiota kasvattanut CSS:n pseudoluokka, joka on toiminut uusilla selaimilla viime joulukuusta lähtien.
 :has toimii niin, että sen avulla voi valita kaikki elementit, jotka sisältävät tietyn lapsielementin. Esimerkiksi:
@@ -18,7 +16,7 @@ h1:has(h2) {
 color: red;
 }
 ```
-Ilman :has luokkaa, sama toiminto pitäisi tehdä JavaScriptillä
+Ilman :has luokkaa, sama toiminto pitäisi tehdä JavaScriptillä:
 
 ```js
 const h1Elements = document.querySelectorAll('h1');
@@ -30,19 +28,17 @@ h1.classList.add('makeThisRed');
 });
 ```
 
-Koodi käy läpi jokaisen **`<h1>`**-elementin, tarkistaa, onko sen seuraava sisarelementti **`<h2>`**-elementti, ja jos näin on, lisää **`'makeThisRed'`**-luokan **`<h1>`**:lle, ja CSS:n puolella luokkaan voidaan tehdä sääntöjä, jotka muuttavat <h1> -elementin ulkoasua:
+Koodi käy läpi jokaisen **h1**-elementin, tarkistaa, onko sen seuraava sisarelementti **h2** -elementti, ja jos näin on, lisää **makeThisRed**-luokan **h1**:lle, ja CSS:n puolella luokkaan voidaan tehdä sääntöjä, jotka muuttavat **h1** -elementin ulkoasua:
 
 ```css
 .makeThisRed {
 color:red;
 }
 ```
-:has luokkaa voi käyttää myös monimutkaisemmin tavoin, esimerkiksi tässä tapauksessa kaikki **`<ul>`**-elementit, jotka sisältävät vähintään yhden **`<li>`**-elementin, jonka luokka on "error", saavat punaisen reunan.
+:has luokkaa voi käyttää myös monimutkaisemmin tavoin, esimerkiksi tässä tapauksessa kaikki **ul**-elementit, jotka sisältävät vähintään yhden **li**-elementin, jonka luokka on "error", saavat punaisen reunan.
 
 ```css
 ul:has(li.error) {
 border: 2px solid red;
 }
 ```
-
-<!--more-->
