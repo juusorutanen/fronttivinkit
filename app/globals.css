@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-layer base {
+@layer base {
   *,
   *::before,
   *::after {
@@ -28,5 +28,8 @@ layer base {
   }
   ::selection {
     background: #555555;
+  }
+  h1 {
+    @apply text-h1;
   }
 }
