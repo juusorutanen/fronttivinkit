@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
 
  
   return (
-    <html lang="en">
+    <html lang="en" className={HankenGrotesk.className}>
       <body className="antialiased bg-bg px-6 md:px-52 text-white box-border">
        <Navbar/>
         {children}
