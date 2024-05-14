@@ -24,15 +24,16 @@ const SearchBar = ({ postMetadata }) => {
   };
 
   return (
-    <div className="relative flex w-96">
-      <div className="relative">
+    <form role="search" className="relative flex w-48">
+      <label className="sr-only" for="search">Hakusana</label>
         <FaMagnifyingGlass
-          color="#F7F7F7"
+          color="#F2F2F2"
           size={18}
-          className="absolute text-background top-1/2 left-0 transform -translate-y-1/2"
+          className="absolute text-background top-1/2 left-1 transform -translate-y-1/2"
         />
+        {/* bg-transparent removed below */}
         <input
-          className="outline-none bg-transparent pl-7 w-96"
+          className="placeholder:text-gray-500 pl-[30px] p-1 outline-none w-48 bg-transparent"
           name="search"
           id="search"
           placeholder="Etsi vinkkejä..."
@@ -40,14 +41,13 @@ const SearchBar = ({ postMetadata }) => {
           onChange={handleChange}
           value={searchInput}
         />
-      </div>
       {showResults && (
-        <div className="absolute top-full left-0 w-full max-h-200 overflow-y-auto bg-white shadow-md z-10 p-2">
+        <div className="absolute top-full left-0 w-full max-h-200 overflow-y-auto bg-dark-charcoal shadow-md z-10 p-2">
           {filteredData.length === 0 ? (
-            <p className="text-accent">No results found.</p>
+            <p className="text-white">Ei hakutuloksia...</p>
           ) : (
             filteredData.map((post) => (
-              <div className="text-accent" key={post.title}>
+              <div className="text-white" key={post.title}>
                 <p>
                   <Link href={`/tip/${post.slug}`}>{post.title}</Link>
                 </p>
@@ -56,7 +56,7 @@ const SearchBar = ({ postMetadata }) => {
           )}
         </div>
       )}
-    </div>
+    </form>
   );
 };
 
