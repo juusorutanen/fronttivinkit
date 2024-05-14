@@ -4,7 +4,7 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Code from "@/components/codeblock";
-import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 function getPostContent(slug) {
   const folder = "tips/";
@@ -23,7 +23,7 @@ export const generateStaticParams = async () => {
 export async function generateMetadata({ params, searchParams }) {
   const id = params?.slug ? " ⋅ " + params?.slug : "";
   return {
-    title: `DevTips ${id.replaceAll("_", " ")}`,
+    title: `Fronttivinkit ${id.replaceAll("_", " ")}`,
   };
 }
 
@@ -32,10 +32,8 @@ export default function TipsPage(props) {
   const post = getPostContent(slug);
 
   return (
-    <main>
-      <Link className="hover:text-accent" href="/">
-            <span>Takaisin</span>
-          </Link>
+    <main className="mt-4">
+      <BackButton text="Takaisin" />
       <article>
         <Markdown
           options={{
