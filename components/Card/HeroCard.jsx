@@ -12,7 +12,7 @@ export default function HeroCard() {
         </h3>
       </div>
       <figure className="flex-1">
-        <div className="hero-img-container relative hidden xl:block">
+        <div className="relative hidden md:block">
           <Image
             width={2000} 
             height={1000}
