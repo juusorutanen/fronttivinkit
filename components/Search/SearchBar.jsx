@@ -25,13 +25,12 @@ const SearchBar = ({ postMetadata }) => {
 
   return (
     <form role="search" className="relative flex w-48">
-      <label className="sr-only" for="search">Hakusana</label>
+      <label className="sr-only" htmlFor="search">Hakusana</label>
         <FaMagnifyingGlass
           color="#F2F2F2"
           size={18}
           className="absolute text-background top-1/2 left-1 transform -translate-y-1/2"
         />
-        {/* bg-transparent removed below */}
         <input
           className="placeholder:text-gray-500 pl-[30px] p-1 outline-none w-48 bg-transparent"
           name="search"
